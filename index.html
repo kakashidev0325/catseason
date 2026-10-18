@@ -23,21 +23,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka:wght@600;700&family=IBM+Plex+Mono:wght@500&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="theme.css" />
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
+  <div class="wipe" aria-hidden="true"></div>
+  <div class="scroll-track" aria-hidden="true"></div>
   <header class="site-header">
     <div class="shell header-inner">
       <a href="#top" class="brand">
         <img src="logo.png" alt="" />
         <span class="brand-name"><span class="text-gold">Cat Season</span><span class="brand-ticker">$CATSZN</span></span>
       </a>
-      <nav class="menu">
+      <nav class="menu" id="site-menu">
         <a href="#about">About</a>
-        <a href="#memes">Memes</a>
-        <a href="https://x.com/catseasonsol_x" target="_blank" rel="noreferrer">X</a>
-        <a href="https://t.me/catseason_tg" target="_blank" rel="noreferrer">Telegram</a>
+        <a href="crew.html">Crew</a>
+        <a href="#chapters">Memes</a>
+        <a href="goodcats.html">Goodcats</a>
+        <a href="community.html">Community</a>
       </nav>
       <div class="header-end">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
         <a href="https://t.me/catseason_tg" target="_blank" rel="noreferrer" class="btn btn-ghost" aria-label="Cat Season on Telegram">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path></svg>
           <span class="btn-label">Telegram</span>
@@ -54,9 +61,17 @@
     <section id="top" class="hero">
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-grid" aria-hidden="true"></div>
+      <div class="paws" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M20 8a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm24 0a8 8 0 1 1 0 16 8 8 0 0 1 0-16zM10 24a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm44 0a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM32 28c-10 0-16 8-16 16 4 8 28 8 32 0 0-8-6-16-16-16z"></path></svg>
+        <svg viewBox="0 0 64 64"><path d="M20 8a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm24 0a8 8 0 1 1 0 16 8 8 0 0 1 0-16zM10 24a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm44 0a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM32 28c-10 0-16 8-16 16 4 8 28 8 32 0 0-8-6-16-16-16z"></path></svg>
+        <svg viewBox="0 0 64 64"><path d="M20 8a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm24 0a8 8 0 1 1 0 16 8 8 0 0 1 0-16zM10 24a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm44 0a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM32 28c-10 0-16 8-16 16 4 8 28 8 32 0 0-8-6-16-16-16z"></path></svg>
+        <svg viewBox="0 0 64 64"><path d="M20 8a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm24 0a8 8 0 1 1 0 16 8 8 0 0 1 0-16zM10 24a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm44 0a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM32 28c-10 0-16 8-16 16 4 8 28 8 32 0 0-8-6-16-16-16z"></path></svg>
+        <svg viewBox="0 0 64 64"><path d="M20 8a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm24 0a8 8 0 1 1 0 16 8 8 0 0 1 0-16zM10 24a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm44 0a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM32 28c-10 0-16 8-16 16 4 8 28 8 32 0 0-8-6-16-16-16z"></path></svg>
+        <svg viewBox="0 0 64 64"><path d="M20 8a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm24 0a8 8 0 1 1 0 16 8 8 0 0 1 0-16zM10 24a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm44 0a7 7 0 1 1 0 14 7 7 0 0 1 0-14zM32 28c-10 0-16 8-16 16 4 8 28 8 32 0 0-8-6-16-16-16z"></path></svg>
+      </div>
       <div class="shell hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">100% cat · 0% plan</p>
+        <div class="hero-copy rise-in">
+          <p class="eyebrow"><i class="pulse"></i>100% cat · 0% plan</p>
           <h1>
             <span class="text-gold title-line">Cat Season</span>
             <span class="title-line">is here<span class="ticker">$CATSZN</span></span>
@@ -148,15 +163,92 @@
 
     <section id="about" class="section">
       <div class="shell about-grid">
-        <div class="banner-wrap">
+        <div class="banner-wrap reveal">
           <div class="banner-glow" aria-hidden="true"></div>
           <img src="banner.png" alt="Cat Season banner — the crew piled under fairy lights with a Cat Season sign" />
         </div>
-        <div>
+        <div class="reveal">
           <p class="kicker">02 — About</p>
           <h2><span class="text-gold">Born in</span><br /><span>the blanket</span></h2>
           <p class="prose">Cat Season started as one image: a pile of cats who have never had a bad day. No whitepaper, no venture deck, no promises about the future of finance. People simply liked the pile, so they kept posting the pile — and the pile became a movement.</p>
-          <p class="prose">Goodcats. Brighter days. Life is better with cats. This site exists for exactly two reasons: to look absurdly cozy, and to point you at the people making the noise on X.</p>
+          <p class="prose">Goodcats. Brighter days. Life is better with cats. This site exists for exactly two reasons: to look absurdly cozy, and to point you at the people making the noise on X. <a class="inline-link" href="crew.html">Meet the crew</a>, read the <a class="inline-link" href="goodcats.html">goodcats rules</a>, or <a class="inline-link" href="community.html">join the noise</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="chapters" class="section">
+      <div class="shell">
+        <div class="reveal">
+          <p class="kicker">03 — Three memes</p>
+          <h2><span class="text-gold">Pick a</span><br />chapter</h2>
+          <p class="prose">The vault is one pile of pictures. These three are the stories: the blanket, the aux, and the ball of yarn.</p>
+          <ul class="stats">
+            <li><strong data-count="3">0</strong><span>memes</span></li>
+            <li><strong data-count="6">0</strong><span>stills</span></li>
+            <li><strong data-count="0">0</strong><span>plans</span></li>
+          </ul>
+        </div>
+        <div class="chapter-grid">
+          <a class="chapter reveal" href="pile.html">
+            <img src="memes/full-pile.png" alt="The Cat Season crew piled together in one blanket" />
+            <span class="chapter-no">01</span>
+            <span class="chapter-body">
+              <span class="kicker">The Pile</span>
+              <strong>One blanket. Zero personal space.</strong>
+            </span>
+          </a>
+          <a class="chapter reveal" href="headphones.html">
+            <img src="memes/duo-headphones.png" alt="Black cat and orange beanie cat sharing a laugh in headphones" />
+            <span class="chapter-no">02</span>
+            <span class="chapter-body">
+              <span class="kicker">Headphones</span>
+              <strong>One aux. Two brains.</strong>
+            </span>
+          </a>
+          <a class="chapter reveal" href="yarn.html">
+            <img src="memes/yarn-chaos.png" alt="Two kittens tangled in a pink yarn ball" />
+            <span class="chapter-no">03</span>
+            <span class="chapter-body">
+              <span class="kicker">Yarn</span>
+              <strong>Nobody is in charge of the string.</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="house" class="section">
+      <div class="shell">
+        <div class="reveal">
+          <p class="kicker">04 — The rest of the house</p>
+          <h2><span class="text-gold">More</span><br />pages</h2>
+          <p class="prose">The memes are the loud part. These three are the rest of the season: who is in the pile, the only rules, and where the noise lives.</p>
+        </div>
+        <div class="chapter-grid">
+          <a class="chapter reveal" href="crew.html">
+            <img src="memes/stack.png" alt="Three Cat Season cats stacked in a nest, the top one wearing a crown" />
+            <span class="chapter-no">01</span>
+            <span class="chapter-body">
+              <span class="kicker">Crew</span>
+              <strong>Six cats. One season.</strong>
+            </span>
+          </a>
+          <a class="chapter reveal" href="goodcats.html">
+            <img src="banner.png" alt="The Cat Season crew under fairy lights with a Cat Season sign" />
+            <span class="chapter-no">02</span>
+            <span class="chapter-body">
+              <span class="kicker">Goodcats</span>
+              <strong>Brighter days. No plan.</strong>
+            </span>
+          </a>
+          <a class="chapter reveal" href="community.html">
+            <img src="memes/shared-aux.png" alt="White kitten and brown tabby sharing blue headphones" />
+            <span class="chapter-no">03</span>
+            <span class="chapter-body">
+              <span class="kicker">Community</span>
+              <strong>X, Telegram, and the pile.</strong>
+            </span>
+          </a>
         </div>
       </div>
     </section>
@@ -164,52 +256,52 @@
     <section id="memes" class="section memes">
       <div class="memes-glow" aria-hidden="true"></div>
       <div class="shell">
-        <div class="memes-head">
+        <div class="memes-head reveal">
           <div>
-            <p class="kicker">03 — Meme vault</p>
+            <p class="kicker">05 — Meme vault</p>
             <h2><span class="text-gold">Certified</span><br /><span>cat material</span></h2>
           </div>
           <p>Different cats, same season. Pairings, piles and yarn crimes — steal them, repost them, print them on a hoodie.</p>
         </div>
         <div class="meme-bento">
           <figure class="meme meme-feature">
-            <button type="button" class="meme-open" data-src="memes/full-pile.png" data-caption="the whole season in one blanket">
+            <a href="pile.html" class="meme-link">
               <img src="memes/full-pile.png" alt="The Cat Season crew piled together — headphones, beanie, tabby, calico, white, and tuxedo cats" />
-            </button>
+            </a>
             <figcaption>the whole season in one blanket</figcaption>
           </figure>
           <figure class="meme">
-            <button type="button" class="meme-open" data-src="memes/duo-headphones.png" data-caption="headphones on. season activated.">
+            <a href="headphones.html" class="meme-link">
               <img src="memes/duo-headphones.png" alt="Black headphones cat and orange beanie cat laughing together" />
-            </button>
+            </a>
             <figcaption>headphones on. season activated.</figcaption>
           </figure>
           <figure class="meme">
-            <button type="button" class="meme-open" data-src="memes/yarn-chaos.png" data-caption="when the yarn hits.">
+            <a href="yarn.html" class="meme-link">
               <img src="memes/yarn-chaos.png" alt="Silver tabby and calico kitten tangled in a giant pink yarn ball" />
-            </button>
+            </a>
             <figcaption>when the yarn hits.</figcaption>
           </figure>
           <figure class="meme">
-            <button type="button" class="meme-open" data-src="memes/stack.png" data-caption="goodcats. stacked days.">
+            <a href="pile.html" class="meme-link">
               <img src="memes/stack.png" alt="White heart-pillow cat, cream tabby, and crowned tuxedo stacked as a totem" />
-            </button>
+            </a>
             <figcaption>goodcats. stacked days.</figcaption>
           </figure>
           <figure class="meme">
-            <button type="button" class="meme-open" data-src="memes/shared-aux.png" data-caption="one aux. two brains.">
+            <a href="headphones.html" class="meme-link">
               <img src="memes/shared-aux.png" alt="White kitten and brown tabby sharing one pair of blue headphones" />
-            </button>
+            </a>
             <figcaption>one aux. two brains.</figcaption>
           </figure>
           <figure class="meme">
-            <button type="button" class="meme-open" data-src="memes/green-yarn.png" data-caption="watching the green ball.">
+            <a href="yarn.html" class="meme-link">
               <img src="memes/green-yarn.png" alt="Six different Cat Season cats staring at a glowing green yarn ball" />
-            </button>
+            </a>
             <figcaption>watching the green ball.</figcaption>
           </figure>
         </div>
-        <div class="cta-card">
+        <div class="cta-card reveal">
           <h3 class="text-gold">Got a better meme?</h3>
           <p>Drop it in the X or Telegram community. The best ones get pinned, reposted and immortalised in the vault.</p>
           <div class="cta-actions">
@@ -230,6 +322,14 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <img src="logo.png" alt="" />
+      <nav class="footer-pages" aria-label="Site pages">
+        <a href="crew.html">Crew</a>
+        <a href="pile.html">The Pile</a>
+        <a href="headphones.html">Headphones</a>
+        <a href="yarn.html">Yarn</a>
+        <a href="goodcats.html">Goodcats</a>
+        <a href="community.html">Community</a>
+      </nav>
       <div class="footer-links">
         <a href="https://x.com/catseasonsol_x" target="_blank" rel="noreferrer" aria-label="Cat Season on X" class="icon-btn">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
@@ -248,75 +348,6 @@
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" hidden>
-    <button type="button" class="lightbox-backdrop" id="lightbox-backdrop" aria-label="Close preview"></button>
-    <figure class="lightbox-card">
-      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">Close</button>
-      <img id="lightbox-img" alt="" />
-      <figcaption id="lightbox-caption"></figcaption>
-    </figure>
-  </div>
-
-  <script>
-    const coin = document.getElementById("coin");
-    if (coin) {
-      const scene = coin.closest(".coin-scene");
-      const reset = () => { coin.style.transform = "rotateX(0deg) rotateZ(0deg)"; };
-      scene.addEventListener("pointermove", (event) => {
-        const box = scene.getBoundingClientRect();
-        const x = (event.clientX - box.left) / box.width - 0.5;
-        const y = (event.clientY - box.top) / box.height - 0.5;
-        coin.style.transform = `rotateX(${(-y * 14).toFixed(2)}deg) rotateZ(${(x * 16).toFixed(2)}deg)`;
-      });
-      scene.addEventListener("pointerleave", reset);
-    }
-
-    const caBtn = document.getElementById("ca-btn");
-    const caValue = document.getElementById("ca-value");
-    const caLabel = document.getElementById("ca-label");
-    if (caBtn) {
-      caBtn.addEventListener("click", async () => {
-        const ca = caBtn.dataset.ca;
-        if (!ca) return;
-        try {
-          await navigator.clipboard.writeText(ca);
-          if (caLabel) caLabel.textContent = "Copied";
-          setTimeout(() => { if (caLabel) caLabel.textContent = "Copy"; }, 1400);
-        } catch {
-          if (caValue) {
-            const range = document.createRange();
-            range.selectNodeContents(caValue);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-          }
-        }
-      });
-    }
-
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    const lightboxCaption = document.getElementById("lightbox-caption");
-    const closeLightbox = () => {
-      lightbox.hidden = true;
-      lightboxImg.removeAttribute("src");
-      document.body.style.overflow = "";
-    };
-    document.querySelectorAll(".meme-open").forEach((button) => {
-      button.addEventListener("click", () => {
-        const thumb = button.querySelector("img");
-        lightboxImg.src = button.dataset.src || thumb?.currentSrc || thumb?.src || "";
-        lightboxImg.alt = thumb?.alt || "";
-        lightboxCaption.textContent = button.dataset.caption || "";
-        lightbox.hidden = false;
-        document.body.style.overflow = "hidden";
-      });
-    });
-    document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
-    document.getElementById("lightbox-backdrop").addEventListener("click", closeLightbox);
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !lightbox.hidden) closeLightbox();
-    });
-  </script>
+  <script src="site.js"></script>
 </body>
 </html>
